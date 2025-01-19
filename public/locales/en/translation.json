@@ -1,5 +1,10 @@
 {
     "main": {
-      "header": "Hey, Aurora"
+      "header": "Hey, Aurora",
+      "creditSum": "Loan amount",
+      "creditLenght": "Loan term"
+    },
+    "tabs": {
+      "loanCalc": "Loan calculater"
     }
 }

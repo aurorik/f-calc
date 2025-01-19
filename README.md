@@ -35,52 +35,17 @@
 ```
 npm start
 ```
-
-# File structure
-- First, create a *locales* folder inside the *public* directory of your app
-- Inside the *en*, *rus*, and *tat* folders, create *translation.json* files
-- Create a new *src/i18n.js*
-- Open the *src/index.js* file and add *i18n.js* to the list of imports
-- Open the *src/App.js* and add
-    ```
-    import { Suspense } from 'react';
-    import { useTranslation} from 'react-i18next';
-    ```
-
-https://lokalise.com/blog/how-to-internationalize-react-application-using-i18next/
-
-https://www.w3schools.com/howto/howto_js_tabs.asp
-
+перевод: public/locales
+открыть файл translation.json
 ```
-Date {
-	int Year;
-	int Month;
-	int Day;
-
-	Date()
-	{
-	set Year/Month/Day to the current date
-	}
-
-	Date(int year, int month, int day)
-	{
-		Year = year;
-		Month = month;
-		Day = day;
-	}
-
-	Date(Date v)
-	{
-		Year = v.Year;
-		Month = v.Month;
-		Day = v.Day;
-	}
+{
+    "main": {  вместо main можно использовать credit
+      "header": "Hey, Aurora",
+      "creditSum": "Сумма кредита",
+      "creditLenght": "Срок кредита",
+      "key3": ","
+    }
 }
-
-
-let myDate = new Date()
-let myNewYear = new Date(2025, 1, 1)
-let myDateCopy1 = myNewYear; //myDateCopy1 будет содержать ссылку на myNewYear
-
-let myDateCopy = new Date(myNewYear) //myDateCopy будет содержать копию myNewYear
 ```
+ в скобках ключи
+ вместо названия на русском пишем {t('main.creditSum')}, вместо creditSum ключ

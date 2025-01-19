@@ -14,8 +14,15 @@ function calcCreditMonthlyOverpayment(monthlyPayment, creditLength, creditSum){
   return monthlyPayment * creditLength - creditSum
 }
 
+function totalPayment(overpayment, creditSum){
+  return overpayment + creditSum
+}
+
+
 let MonthlyPayment = calcCreditMonthlyPayment(CreditSum, InterestRate, CreditLength)
 let Overpayment = calcCreditMonthlyOverpayment(MonthlyPayment, CreditLength, CreditSum)
+let TotalPayment = totalPayment(Overpayment, CreditSum)
 
 console.log(roundNumber(MonthlyPayment))
 console.log(roundNumber(Overpayment))
+console.log(roundNumber(TotalPayment))
