@@ -14,22 +14,18 @@
       "monthly": " monthly",
       "daily": " daily",
       "depositTerm": "Deposit term",
-      "monthlyPayment": "Monthly payment  ",
-      "overpayment": "Overpayment  ",
-      "totalPayment": "Total payment  ",
-      "income": "Income  ",
-      "endValue": "End investment value  ",
-      "annualRate": "Annual rate  ",
-      "fullInf": "52",
-      "about": "52"
+      "monthlyPayment": "Monthly payment",
+      "overpayment": "Overpayment",
+      "totalPayment": "Total payment",
+      "income": "Income",
+      "endValue": "End investment value"
     },
     "tabs": {
       "LoanCalc": "Loan calculater",
       "MicroloanCalc": "Microloan calculater",
       "DepositCap": "Calculator of deposit profitability with capitalization",
       "DepositNoCap": "Calculator of deposit profitability without capitalization",
-      "Inf": "Information about calculators",
-      "About": "About"
+      "Inf": "Information about calculators"
     },
     "misc": {
       "Copyright": "Kazan 2025",
