@@ -182,7 +182,7 @@ function Loan() {
   }
 
   let monthlyPayment = credit.calcCreditMonthlyPayment(creditSum, interestRate, creditLength)
-  let overpayment = credit.calcCreditMonthlyOverpayment(creditSum, monthlyPayment, creditLength)
+  let overpayment = credit.calcCreditMonthlyOverpayment(monthlyPayment, creditLength, creditSum)
 
   document.getElementById('Loan.MonthlyPayment').innerHTML = helpers.roundNumber(monthlyPayment)
   document.getElementById('Loan.Overpayment').innerHTML = helpers.roundNumber(overpayment)
